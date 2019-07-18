@@ -1,2 +1,2 @@
 # SR Parser
-SR Parser is a shift-reduce parser written in python.
+A shift-reduce parser written in python.
