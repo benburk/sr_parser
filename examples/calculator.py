@@ -2,12 +2,12 @@
 defines the grammar to be interpreted by a shift reduce
 parser to parse arithmetic expressions
 """
-from sr_parser.sr_parser import LexRule
-from sr_parser.sr_parser import make_lexer
-from sr_parser.sr_parser import make_parser
-from sr_parser.sr_parser import OpPrecedence
-from sr_parser.sr_parser import ParseRule
-from sr_parser.sr_parser import Token
+from sr_parser import LexRule
+from sr_parser import make_lexer
+from sr_parser import make_parser
+from sr_parser import OpPrecedence
+from sr_parser import ParseRule
+from sr_parser import Token
 
 
 GRAMMAR = (
@@ -44,7 +44,7 @@ def main():
     lex = make_lexer(GRAMMAR)
     parse = make_parser(RULES, PRECEDENCE)
     while True:
-        text = input(">")
+        text = input("> ")
         if not text:
             exit("Exiting...")
         tokens = lex(text)
